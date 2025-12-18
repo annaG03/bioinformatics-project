@@ -13,13 +13,13 @@ Viene applicata una soglia di frequenza F (compresa tra 0 e 1). Solo i k-mer che
 3. Report Testuale
 Genera un file di testo strutturato che mostra, per ogni k-mer significativo:
 
-Il k-mer stesso (es: "ATGCTA")
+- Il k-mer stesso (es: "ATGCTA")
 
-La frequenza totale
+- La frequenza totale
 
-La distribuzione dettagliata per ogni posizione
+- La distribuzione dettagliata per ogni posizione
 
-Il numero di occorrenze in ciascuna posizione possibile
+- Il numero di occorrenze in ciascuna posizione possibile
 
 4. Identificazione del k-mer Dominante
 Tra tutti i k-mer che superano la soglia, il programma identifica quello che appare più frequentemente in una singola posizione, evidenziando così il pattern più "fortemente posizionato".
@@ -27,11 +27,11 @@ Tra tutti i k-mer che superano la soglia, il programma identifica quello che app
 5. Visualizzazione Grafica
 Crea un diagramma a barre che mostra l'andamento del k-mer dominante attraverso tutte le posizioni. Il grafico evidenzia chiaramente:
 
-La posizione di picco (massima frequenza)
+- La posizione di picco (massima frequenza)
 
-L'andamento generale attraverso le diverse posizioni
+- L'andamento generale attraverso le diverse posizioni
 
-La distribuzione spaziale del pattern
+- La distribuzione spaziale del pattern
 
 6. Estrazione Mirata di Reads
 Seleziona tutti i reads che contengono il k-mer dominante esattamente nella posizione dove esso occorre più frequentemente. Questi reads vengono salvati in un file FASTA con informazioni aggiuntive.
@@ -49,31 +49,32 @@ Il grafico prodotto è un istogramma che visualizza intuitivamente come la prese
 File FASTA
 I reads selezionati vengono salvati in formato FASTA standard, ma con header arricchiti che includono:
 
-L'identificatore originale del read
+- L'identificatore originale del read
 
-La qualità media calcolata
+- La qualità media calcolata
 Questa formattazione permette un'ulteriore analisi con altri strumenti bioinformatici.
 
 Applicazioni Tipiche
 Questo strumento è utile per:
 
-Identificare adapter o contaminazioni in posizioni specifiche
+- Identificare adapter o contaminazioni in posizioni specifiche
 
-Studiare bias di sequenziamento
+- Studiare bias di sequenziamento
 
-Analizzare pattern ricorrenti in esperimenti di ChIP-seq o CLIP-seq
+- Analizzare pattern ricorrenti in esperimenti di ChIP-seq o CLIP-seq
 
-Controllare la qualità di librerie di sequenziamento
+- Controllare la qualità di librerie di sequenziamento
 
-Identificare motivi sequenza-specifici
+- Identificare motivi sequenza-specifici
 
-Punti di Forza
-Analisi posizionale precisa: Non solo conta i k-mer, ma ne studia la distribuzione spaziale
+* Punti di Forza *
 
-Soglia regolabile: Permette di filtrare il rumore di fondo
+- Analisi posizionale precisa: Non solo conta i k-mer, ma ne studia la distribuzione spaziale
 
-Output multipli: Fornisce sia dati grezzi che visualizzazioni
+- Soglia regolabile: Permette di filtrare il rumore di fondo
 
-Integrità dei dati: Mantiene le informazioni di qualità originali
+- Output multipli: Fornisce sia dati grezzi che visualizzazioni
 
-Formati standard: Usa formati largamente supportati (FASTQ, FASTA, PNG)
+- Integrità dei dati: Mantiene le informazioni di qualità originali
+
+- Formati standard: Usa formati largamente supportati (FASTQ, FASTA, PNG)
