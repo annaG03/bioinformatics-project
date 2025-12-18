@@ -2,7 +2,8 @@
 
 Analizzatore di k-mer per Sequenze FASTQ
 Panoramica
-Questo strumento analizza file FASTQ contenenti reads di sequenziamento di uguale lunghezza, studiando la distribuzione posizionale di k-mer (sottostringhe di lunghezza k) all'interno dei reads. Il programma identifica pattern ricorrenti e produce diverse forme di output per l'analisi dei dati.
+Questo strumento analizza file FASTQ contenenti reads di sequenziamento di uguale lunghezza, studiando la distribuzione posizionale di k-mer (sottostringhe di lunghezza k) all'interno dei reads. 
+Il programma identifica pattern ricorrenti e produce diverse forme di output per l'analisi dei dati.
 
 ## Funzionalità Principali
 
