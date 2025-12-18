@@ -67,7 +67,7 @@ Questo strumento è utile per:
 
 - Identificare motivi sequenza-specifici
 
-** Punti di Forza **
+## ** Punti di Forza **
 
 - Analisi posizionale precisa: Non solo conta i k-mer, ma ne studia la distribuzione spaziale
 
